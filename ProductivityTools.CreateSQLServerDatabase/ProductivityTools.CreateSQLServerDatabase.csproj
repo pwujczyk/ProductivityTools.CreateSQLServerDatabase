@@ -9,6 +9,9 @@
     <PackageLicenseUrl>http://productivitytools.tech</PackageLicenseUrl>
     <PackageProjectUrl>http://productivitytools.tech</PackageProjectUrl>
     <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase</RepositoryUrl>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
