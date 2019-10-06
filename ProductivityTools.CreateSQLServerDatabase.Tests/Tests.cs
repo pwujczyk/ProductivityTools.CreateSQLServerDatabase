@@ -6,7 +6,7 @@ using System.IO;
 namespace ProductivityTools.CreateSQLServerDatabase.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class Tests
     {
         [TestMethod]
         public void TestIfDatabaseExists()

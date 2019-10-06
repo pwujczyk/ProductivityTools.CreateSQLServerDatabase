@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Description>It creates database on SQL Server.</Description>
+    <Authors>Pawel Wujczyk</Authors>
+    <Company />
+    <Product />
+    <PackageLicenseUrl>http://productivitytools.tech</PackageLicenseUrl>
+    <PackageProjectUrl>http://productivitytools.tech</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
