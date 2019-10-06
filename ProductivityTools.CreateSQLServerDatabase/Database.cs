@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 
 namespace ProductivityTools.CreateSQLServerDatabase
 {
-    public class Database
+    public class Database : IDatabase
     {
         private readonly string Name;
         private readonly string DataSourceConnectionString;
