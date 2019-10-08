@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace ProductivityTools.CreateSQLServerDatabase
 {
@@ -16,7 +17,9 @@ namespace ProductivityTools.CreateSQLServerDatabase
         public Database(string name, string dataSourceConnectionString)
         {
             this.Name = name;
-            this.DataSourceConnectionString = dataSourceConnectionString;
+            var parts = dataSourceConnectionString.Split(';');
+            var serverConnectionString = parts.Where(x => !x.Contains("Database")).Aggregate((current, next) => current + ";" + next);
+            this.DataSourceConnectionString = serverConnectionString;
         }
 
         /// <summary>
