@@ -22,6 +22,19 @@ namespace ProductivityTools.CreateSQLServerDatabase.Tests
         }
 
         [TestMethod]
+        public void TestIfDatabaseExistsWithDatabaseName()
+        {
+            string name = "DB" + Path.GetRandomFileName().Replace('.', 'x');
+            Database database = new Database(name, "Server=.\\SQL2017;Database=XXX;Trusted_Connection=True;");
+            var r = database.Exists();
+            Assert.IsFalse(r);
+
+            database.Create();
+            r = database.Exists();
+            Assert.IsTrue(r);
+        }
+
+        [TestMethod]
         [ExpectedException(typeof(SqlException))]
         public void TryCreateDatabaseTwice()
         {
