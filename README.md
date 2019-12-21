@@ -18,9 +18,9 @@ Library has three methods:
 
 **Database** object implement **IDatabase** interface.
 
-Usage example:
+## Usage example:
 
 ```c#
 Database database = new Database(name, "Server=.\\SQL2017;Trusted_Connection=True;");
-database.Create();``
+database.Create();
 ```
