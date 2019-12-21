@@ -25,7 +25,7 @@ namespace ProductivityTools.CreateSQLServerDatabase.Tests
         public void TestIfDatabaseExistsWithDatabaseName()
         {
             string name = "DB" + Path.GetRandomFileName().Replace('.', 'x');
-            Database database = new Database(name, "Server=.\\SQL2017;Database=XXX;Trusted_Connection=True;");
+            Database database = new Database(name, $"Server=.\\SQL2017;Database={name};Trusted_Connection=True;");
             var r = database.Exists();
             Assert.IsFalse(r);
 
