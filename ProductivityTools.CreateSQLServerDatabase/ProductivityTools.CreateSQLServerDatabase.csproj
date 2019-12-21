@@ -1,17 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-    <Description>It creates database on SQL Server.</Description>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Description>It creates database on SQL Server. It has Create, Exists, CreateSilent method.</Description>
     <Authors>Pawel Wujczyk</Authors>
     <Company />
     <Product />
-    <PackageLicenseUrl>http://productivitytools.tech</PackageLicenseUrl>
-    <PackageProjectUrl>http://productivitytools.tech</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase/</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase</RepositoryUrl>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
