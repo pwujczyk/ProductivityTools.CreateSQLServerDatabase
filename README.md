@@ -13,8 +13,8 @@
 
 # ProductivityTools.CreateSQLServerDatabase
 
-Creates database on SQL Server.
-
+Creates database on SQL Server. Used often before DBUp migrations.
+<!--more-->
 
 Library allow us to create database in simple two steps.
 First we are creating Database object, providing target database name and the connection string. Next we can invoke three methods:
