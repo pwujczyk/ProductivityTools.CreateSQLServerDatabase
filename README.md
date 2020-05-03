@@ -43,5 +43,5 @@ Library will make and use
 Database database = new Database(name, "Server=.\\SQL2019;Trusted_Connection=True;");
 database.Create();
 ```
-
+<!--og-image-->
 ![Create database](Images/CreateDatabase.png)
