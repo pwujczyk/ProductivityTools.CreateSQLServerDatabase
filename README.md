@@ -2,7 +2,7 @@
  <p align="right">
     <a href="https://www.nuget.org/packages/ProductivityTools.CreateSQLServerDatabase/"><img src="Images/Header/Nuget_border_40px.png" /></a>
     <a href="http://productivitytools.tech/productivitytools-createsqlserverdatabase/"><img src="Images/Header/ProductivityTools_green_40px_2.png" /><a> 
-    <a href="https://github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase"><img src="Images/Header/Github_border_40px.png" /></a>
+    <a href="https://www.github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
     <a href="https://www.powershellgallery.com/packages/ProductivityTools.PSSetLockScreen/">
@@ -11,7 +11,7 @@
 </p>
 
 
-# ProductivityTools.CreateSQLServerDatabase
+# CreateSQLServerDatabase
 
 Creates database on SQL Server. Used often before DBUp migrations.
 
@@ -26,20 +26,20 @@ Database object exposes three methods:
 
 During creation of database connection string cannot contain database name so library removes it from the connection string if provided. From connection string:
 
-```
+```C#
 "Server=.\\sql2019;Database=PTMeetings;Integrated Security=True"
 ````
 Library will make and use
 
-```
+```C#
 "Server=.\\sql2019;Integrated Security=True"
 ```
 
 **Database** object implement **IDatabase** interface, so you can inject it or use it in tests if required. 
 
-## Usage example:
+## Usage example
 
-```c#
+```C#
 Database database = new Database(name, "Server=.\\SQL2019;Trusted_Connection=True;");
 database.Create();
 ```
