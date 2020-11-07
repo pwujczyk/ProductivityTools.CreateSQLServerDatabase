@@ -5,7 +5,7 @@
     <a href="https://www.github.com/pwujczyk/ProductivityTools.CreateSQLServerDatabase"><img src="Images/Header/Github_border_40px.png" /></a>
 </p>
 <p align="center">
-    <a href="https://www.powershellgallery.com/packages/ProductivityTools.PSSetLockScreen/">
+    <a href="http://http://productivitytools.tech/">
         <img src="Images/Header/LogoTitle_green_500px.png" />
     </a>
 </p>
